@@ -225,61 +225,76 @@ export const myProjects = [
 
 export const mySocials = [
   {
-    name: "WhatsApp",
-    href: "",
-    icon: "/assets/socials/whatsApp.svg",
-  },
-  {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/km816/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
+    href: "https://www.instagram.com/thescriptsagex_/",
     icon: "/assets/socials/instagram.svg",
   },
 ];
+export const certificates =[
+  {
+    title: ""
+  }
+]
 
 export const experiences = [
-  {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
+    {
+    title: "cyber analyst",
+    job: " Cyber Security Projects and analysis",
+    date: "2020-2022",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "🔍 Conducted threat analysis to identify vulnerabilities and mitigate cyber risks across critical systems.",
+      "🛡️ Led security projects, implementing firewalls, IDS/IPS, and endpoint protection to strengthen infrastructure.",
+      "📊 Analyzed logs & incident reports to detect breaches, ensuring rapid response and documentation.",
+      "📚 Developed and delivered training sessions on cybersecurity best practices, enhancing team awareness and skills.",
+      "🔄 Collaborated with IT teams to ensure secure system integration and compliance with industry standards.",
     ],
   },
   {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
+    title: "Cyber Security Specialist",
+    job: "Security & Defense Projects ",
+    date: "2022-2023",
+    contents: [
+      "🕵️ Conducting advanced reconnaissance, scanning, and exploitation using tools such as Nmap, Metasploit, and Burp Suite.",
+      "🧨 Identifying and exploiting critical vulnerabilities including SQL Injection, Cross-Site Scripting (XSS), and Remote Code Execution (RCE) to demonstrate real-world impact.",
+      "📝 Delivering detailed security assessment reports with actionable recommendations for developers and system administrators.",
+      "🔐 Guiding the implementation of secure coding practices and robust access control mechanisms, resulting in a significantly improved security posture of the application.",
+      "🚨 Demonstrated real-world impact through proof-of-concept attacks, helping teams understand and prioritize risks."
+    ],
+  },
+  {
+    title: "Backend Developer",
+    job: "Backend Software Enginee",
     date: "2023-2024",
     contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
+      "🤝 Collaborated with frontend developers and product teams to roll out new features and ensure smooth integration.",
+      "🧠 Built and optimized server-side logic, integrated RESTful APIs, and maintained strong 🔐 data security practices.",
+      "⚙️ Tuned SQL queries to enhance database performance and reduce latency.",
+      "🚀 Used Node.js, SQL, and API design principles to deliver a scalable and reliable backend infrastructure.",
+      "📈 Supported real-time updates and improved user experience through faster backend operations.",
     ],
   },
   {
-    title: "Freelance Developer",
-    job: "Self-Employed",
-    date: "2025-Present",
+    title: "Blockchain Developer",
+    job: "blockchain technology and smart contracts",
+    date: "2024-2025",
     contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+      "🧱 Designed and implemented a blockchain-based file system where users can upload files (any type or size), stored permanently in the chain.",
+      "🔐 Ensured immutability and integrity by embedding file metadata (username, file size, file data) within a block, making it resistant to tampering or deletion.",
+      "📜 Developed smart contracts to automate file upload processes, ensuring secure and transparent transactions.",
+      "📊 Created a user-friendly interface for file uploads, providing a seamless experience while maintaining the security and transparency of blockchain technology.",
+      "🌐 Integrated with existing blockchain networks to leverage their security and decentralization features.",
     ],
   },
 ];
 export const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
+    name: "Likith",
+    username: "@TMlucky",
     body: "I've never seen anything like this before. It's amazing. I love it.",
     img: "https://robohash.org/jack",
   },
