@@ -49,12 +49,12 @@ const Progress = () => {
       console.error('Error fetching HackerRank data:', err);
       // Fallback to static data if API fails
       setHackerrankData({
-        totalSolved: 120,
-        easySolved: 70,
-        mediumSolved: 40,
-        hardSolved: 10,
+        totalSolved: 310,
+        easySolved: 94,
+        mediumSolved: 159,
+        hardSolved: 58,
         rank: "Top 10%",
-        score: 850
+        score: 1200
       });
     }
   };
@@ -92,10 +92,10 @@ const Progress = () => {
     },
     {
       platform: "HackerRank",
-      totalSolved: hackerrankData?.totalSolved || 120,
-      easy: hackerrankData?.easySolved || 70,
-      medium: hackerrankData?.mediumSolved || 40,
-      hard: hackerrankData?.hardSolved || 10,
+      totalSolved: hackerrankData?.totalSolved || 310,
+      easy: hackerrankData?.easySolved || 94,
+      medium: hackerrankData?.mediumSolved || 159,
+      hard: hackerrankData?.hardSolved || 58,
       streak: 30, // This might need a different API endpoint
       rank: hackerrankData?.rank || "Top 10%",
       score: hackerrankData?.score || 850,
@@ -116,9 +116,9 @@ const Progress = () => {
   ];
 
   const achievements = [
-    { name: "Problem Solver", description: "Solved 100+ problems", icon: "🏆" },
-    { name: "Consistency King", description: "30+ day streak", icon: "🔥" },
-    { name: "Algorithm Master", description: "Mastered 10+ algorithms", icon: "⚡" },
+    { name: "Problem Solver", description: "Solved 700+ problems", icon: "🏆" },
+    { name: "Consistency King", description: "180+ day streak", icon: "🔥" },
+    { name: "Algorithm Master", description: "Mastered 36+ algorithms", icon: "⚡" },
     { name: "Data Structure Expert", description: "Expert in all DS", icon: "🧠" }
   ];
 

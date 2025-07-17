@@ -1,38 +1,37 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "Redops",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "A full-scope ethical hacking project that simulates real-world red team attacks on enterprise systems using custom tools, mapped to the MITRE ATT&CK framework.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Simulates the full lifecycle of a real-world cyber attack—from reconnaissance to exploitation and post-exploitation—within a controlled lab environment.",
+      "Includes the creation of custom scripts and exploits using Python, PowerShell, and Bash, giving hands-on experience in advanced penetration techniques.",
+      "Maps each attack phase to the MITRE ATT&CK framework for tactical clarity, making it useful for red team–blue team collaboration and reporting.",
     ],
-    href: "",
+    href: "https://github.com/theanimenexus/RedOps",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/redops.jpg",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "python",
+        path: "/assets/logos/python.svg",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
+        name: "kali linux",
+        path: "/assets/logos/kalilinux.svg",
       },
       {
         id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
+        name: "bash",
+        path: "/assets/logos/bash.svg",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "virtual machine",
+        path: "/assets/logos/vmware.svg",
       },
     ],
   },
@@ -75,38 +74,37 @@ export const myProjects = [
   },
   {
     id: 3,
-    title: "Blazor Web App",
+    title: "Decentralized Storage",
     description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+      "Designed secure smart contracts for decentralized storage, ensuring high availability and robust encryption.",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      "Designed and deployed smart contracts for decentralized, transparent data storage on the blockchain.",
+      "Created a user-friendly interface for file uploads, providing a seamless experience while maintaining the security and transparency of blockchain technology.",
+      "Integrated with existing blockchain networks to leverage their security and decentralization features.",
     ],
-    href: "",
-    logo: "",
+    href: "https://dstorge.netlify.app/",
+    logo: "/assets/projects/logo/blockchain.png",
     image: "/assets/projects/blazor-app.jpg",
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "Solidity",
+        path: "/assets/logos/solidity.svg",
       },
       {
         id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
+        name: "IPFS",
+        path: "/assets/logos/ipfs.svg",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "Ethereum",
+        path: "/assets/logos/ether.svg",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Hardhat",
+        path: "/assets/logos/hardhat.svg",
       },
     ],
   },
@@ -224,6 +222,12 @@ export const myProjects = [
 ];
 
 export const mySocials = [
+
+  {
+    name: "Resume",
+    href: "assets/resume.pdf",
+    icon: "/assets/socials/resume.svg",
+  },
   {
     name: "Linkedin",
     href: "https://www.linkedin.com/in/km816/",
@@ -235,11 +239,7 @@ export const mySocials = [
     icon: "/assets/socials/instagram.svg",
   },
 ];
-export const certificates =[
-  {
-    title: ""
-  }
-]
+
 
 export const experiences = [
     {

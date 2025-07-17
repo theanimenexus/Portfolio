@@ -19,8 +19,10 @@ const About = () => {
           <div className="z-10">
             <p className="headtext">Hi, I'm Karthikeyan</p>
             <p className="subtext">
-              Over the last 4 years, I developed my frontend and backend dev
-              skills to deliver dynamic and software and web applications.
+            A passionate Computer Science Engineering student with a strong foundation in backend development, ethical hacking, 
+and blockchain technology. Proficient in Java, Python, SQL, and server-side JavaScript, with expertise in smart contract 
+creation and blockchain development. Completed over 50 online courses and 10+ major projects, demonstrating a 
+continuous drive to learn, innovate, and build secure, robust systems.  
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "motion/react";
 const Certificates = () => {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  // Remove categories, selectedCategory, handleCategoryClick, and filteredCertificates logic
 
   const certificates = [
     {
@@ -13,8 +13,8 @@ const Certificates = () => {
       issuer: "Harvard University",
       date: "2024",
       image: "assets/cert/harvard.png",
-        description: "Leadership: Inspiring vision, guiding with integrity, and empowering others to achieve shared goals.",
-        category: "Language"
+      description: "Leadership: Inspiring vision, guiding with integrity, and empowering others to achieve shared goals.",
+      category: "Language"
     },
     {
       id: 2,
@@ -108,12 +108,16 @@ const Certificates = () => {
     }
   ];
 
-  const categories = ["All", "Frontend", "Full Stack", "Blockchain", "Computer Science", "Cloud", "DevOps", "Programming", "Language"];
+  // Get unique categories (excluding 'All')
+  const categories = Array.from(new Set(certificates.map(cert => cert.category)));
+  const [selectedCategory, setSelectedCategory] = useState(categories[0]);
 
   // Filter certificates based on selected category
-  const filteredCertificates = selectedCategory === "All" 
-    ? certificates 
-    : certificates.filter(cert => cert.category === selectedCategory);
+  const filteredCertificates = certificates.filter(cert => cert.category === selectedCategory);
+
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+  };
 
   const handleViewCertificate = (certificate) => {
     setSelectedCertificate(certificate);
@@ -143,9 +147,7 @@ const Certificates = () => {
     setSelectedCertificate(null);
   };
 
-  const handleCategoryClick = (category) => {
-    setSelectedCategory(category);
-  };
+  // Remove categories, selectedCategory, handleCategoryClick, and filteredCertificates logic
 
   return (
     <section id="certificates" className="min-h-screen py-20">
@@ -204,7 +206,6 @@ const Certificates = () => {
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                
                 {/* Category Badge */}
                 <div className="absolute top-4 right-4">
                   <span className="px-3 py-1 text-xs font-medium bg-blue-600 text-white rounded-full">
@@ -218,7 +219,6 @@ const Certificates = () => {
                 <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
                   {certificate.title}
                 </h3>
-                
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-gray-400 text-sm font-medium">
                     {certificate.issuer}
@@ -227,11 +227,9 @@ const Certificates = () => {
                     {certificate.date}
                   </span>
                 </div>
-
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">
                   {certificate.description}
                 </p>
-
                 {/* Action Buttons */}
                 <div className="flex gap-3">
                   <button 
@@ -251,9 +249,6 @@ const Certificates = () => {
                   </button>
                 </div>
               </div>
-
-              {/* Hover Effect Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             </motion.div>
           ))}
         </div>
@@ -265,7 +260,7 @@ const Certificates = () => {
             animate={{ opacity: 1 }}
             className="text-center py-12"
           >
-            <p className="text-gray-400 text-lg">No certificates found for the selected category.</p>
+            <p className="text-gray-400 text-lg">No certificates found in this category.</p>
           </motion.div>
         )}
 
